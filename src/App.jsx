@@ -32,7 +32,7 @@ function App() {
     const yearsToLive = Array(lifespan - yearsLived).fill(true);
 
     return (
-        <div className="bg-fresh-air -z-20 relative flex justify-center px-12 py-6">
+        <div className="relative flex justify-center px-12 py-6">
             <div className="flex justify-start items-center flex-col relative min-h-screen backdrop-blur-sm max-w-[280px]">
                 <h1 className="mb-4 font-bold text-4xl text-center tracking-tight">
                     Your Life in Dots
@@ -43,7 +43,7 @@ function App() {
                 <input
                     type="date"
                     className="mb-2 border-solid border-black border-2 rounded-md text-center w-32 self-end"
-                    value={selectedDate}
+                    defaultValue={"1975-06-01"}
                     onChange={(e) => {
                         setSelectedDate(e.target.value);
                     }}
